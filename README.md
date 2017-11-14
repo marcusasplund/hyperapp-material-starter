@@ -9,11 +9,11 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-# [Hyperapp](https://github.com/hyperapp/hyperapp)  & [material-components-web](https://github.com/material-components/material-components-web) starter project
+## [Hyperapp](https://github.com/hyperapp/hyperapp)  & [material-components-web](https://github.com/material-components/material-components-web) starter project
 
-# heads up: this is a work in progress!!
+## heads up: this is a work in progress!!
 
-## [demo](https://pap.as/hyperapp-material-starter/)
+## ~~demo~~
 
 Offline support with service worker
 
