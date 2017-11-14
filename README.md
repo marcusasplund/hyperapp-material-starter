@@ -1,5 +1,7 @@
 # hyperapp-material-starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/hyperapp-material-starter.svg)](https://greenkeeper.io/)
+
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-material-starter.svg)](https://github.com/marcusasplund/hyperapp-material-starter/issues)
 [![Build status](https://travis-ci.org/marcusasplund/hyperapp-material-starter.svg?branch=master)](https://travis-ci.org/marcusasplund/hyperapp-material-starter)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/270e0c89115b46fcaa1f7e57b43ed028)](https://www.codacy.com/app/marcusasplund/hyperapp-material-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marcusasplund/hyperapp-material-starter&amp;utm_campaign=Badge_Grade)
