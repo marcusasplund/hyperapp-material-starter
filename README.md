@@ -25,7 +25,7 @@ Offline support with service worker
 
     $ yarn
 
-    $ yarn start
+    $ yarn start 
 ````
 
 Open up application at http://localhost:4000/ in browser
