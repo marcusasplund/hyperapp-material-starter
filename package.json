@@ -1,0 +1,58 @@
+{
+  "name": "hyperapp-material-starter",
+  "version": "0.0.1",
+  "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
+  "license": "MIT",
+  "scripts": {
+    "build": "taskr build release",
+    "start": "taskr watch",
+    "preserve": "yarn run build",
+    "serve": "serve release -s -p 4000"
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcusasplund/hyperapp-material-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcusasplund/hyperapp-material-starter/issues"
+  },
+  "homepage": "https://github.com/marcusasplund/hyperapp-material-starter#readme",
+  "devDependencies": {
+    "@taskr/clear": "^1.1.0",
+    "@taskr/concat": "^1.1.0",
+    "@taskr/esnext": "^1.1.0",
+    "@taskr/htmlmin": "^1.1.0",
+    "@taskr/postcss": "^1.1.2",
+    "@taskr/rev": "^1.1.0",
+    "@taskr/sass": "^1.1.0",
+    "@taskr/uglify": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
+    "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
+    "fly-precache": "^2.1.0",
+    "fly-rollup": "^2.1.0",
+    "rollup": "^0.51.2",
+    "rollup-plugin-buble": "^0.17.0",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "serve": "^6.0.6",
+    "taskr": "^1.1.0"
+  },
+  "dependencies": {
+    "@material/button": "^0.25.0",
+    "@material/card": "^0.25.0",
+    "@material/dialog": "^0.25.0",
+    "@material/drawer": "^0.25.0",
+    "@material/form-field": "^0.25.0",
+    "@material/layout-grid": "^0.24.0",
+    "@material/list": "^0.25.0",
+    "@material/ripple": "^0.25.0",
+    "@material/select": "^0.25.0",
+    "@material/toolbar": "^0.25.0",
+    "@material/typography": "^0.3.0",
+    "axios": "^0.17.1",
+    "hyperapp": "^0.16.0"
+  }
+}
