@@ -1,5 +1,6 @@
 const browserSync = require('browser-sync')
 const wbBuild = require('workbox-build')
+const rollup = require('rollup')
 
 let isWatching = false
 let isServer = false
@@ -50,34 +51,35 @@ export async function copyStaticAssets (task, o) {
   await task.source(o.src || src.staticAssets).target(target)
 }
 
-export async function js (task) {
-  await task.source('src/index.js').rollup({
-    rollup: {
-      plugins: [
-        require('rollup-plugin-buble')({
-          jsx: 'h',
-          transforms: {
-            dangerousForOf: true
-          }
-        }),
-        require('rollup-plugin-commonjs')({
-          include: 'node_modules/**'
-        }),
-        require('rollup-plugin-replace')({
-          'process.env.NODE_ENV': JSON.stringify(isWatching ? 'development' : 'production')
-        }),
-        require('rollup-plugin-node-resolve')({
-          browser: true,
-          main: true
-        })
-      ]
-    },
-    bundle: {
-      format: 'iife',
-      sourceMap: isWatching,
-      moduleName: 'window'
-    }
-  }).target(`${target}`)
+const rollupInputOptions = {
+  input: './src/index.js',
+  plugins: [
+    require('rollup-plugin-buble')({
+      jsx: 'h',
+      transforms: {
+        dangerousForOf: true
+      }
+    }),
+    require('rollup-plugin-commonjs')(),
+    require('rollup-plugin-replace')({
+      'process.env.NODE_ENV': JSON.stringify(isWatching ? 'development' : 'production')
+    }),
+    require('rollup-plugin-node-resolve')({
+      browser: true,
+      main: true
+    })
+  ]
+}
+
+const rollupOutputOptions = {
+  file: `${target}/index.js`,
+  format: 'iife',
+  name: 'window'
+}
+
+export async function js () {
+  const bundle = await rollup.rollup(rollupInputOptions)
+  await bundle.write(rollupOutputOptions)
 }
 
 export async function styles (task) {
