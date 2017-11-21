@@ -1,4 +1,6 @@
 const browserSync = require('browser-sync')
+const wbBuild = require('workbox-build')
+
 let isWatching = false
 let isServer = false
 
@@ -20,13 +22,18 @@ const src = {
   ]
 }
 
-export async function cache (task) {
-  await task.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
-    .precache({
-      cacheId: `${applicationId}`,
-      stripPrefix: 'release/'
-    })
-    .target(`${releaseTarget}`)
+export async function cache () {
+  await wbBuild.generateSW({
+    globDirectory: './release/',
+    swDest: `${releaseTarget}/sw.js`,
+    globPatterns: ['**/*.{js,html,css,png,jpg,gif,woff,woff2}']
+  })
+  .then(() => {
+    console.log('Service worker generated.')
+  })
+  .catch((err) => {
+    console.log('[ERROR] This happened: ' + err)
+  })
 }
 
 export async function lint (task) {
