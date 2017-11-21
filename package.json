@@ -37,6 +37,7 @@
     "rollup-plugin-replace": "^2.0.0",
     "serve": "^6.0.6",
     "taskr": "^1.1.0",
+    "taskr-standard": "^1.0.1",
     "workbox-build": "^2.1.2"
   },
   "dependencies": {
@@ -50,7 +51,6 @@
     "@material/toolbar": "^0.25.0",
     "@material/typography": "^0.3.0",
     "axios": "^0.17.1",
-    "hyperapp": "^0.16.0",
-    "taskr-standard": "^1.0.1"
+    "hyperapp": "^0.16.0"
   }
 }
