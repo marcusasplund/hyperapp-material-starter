@@ -41,7 +41,7 @@
     "workbox-build": "^2.1.2"
   },
   "dependencies": {
-    "@material/button": "^0.25.0",
+    "@material/button": "^0.26.0",
     "@material/card": "^0.25.0",
     "@material/dialog": "^0.25.0",
     "@material/drawer": "^0.25.0",
