@@ -42,9 +42,7 @@
   },
   "dependencies": {
     "@material/button": "^0.27.0",
-    "@material/card": "^0.25.0",
-    "@material/dialog": "^0.27.0",
-    "@material/drawer": "^0.26.0",
+    "@material/card": "^0.27.0",,
     "@material/dialog": "^0.27.0",
     "@material/drawer": "^0.27.0",
     "@material/layout-grid": "^0.24.0",
