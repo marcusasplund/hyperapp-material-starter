@@ -51,6 +51,6 @@
     "@material/toolbar": "^0.27.0",
     "@material/typography": "^0.3.0",
     "axios": "^0.17.1",
-    "hyperapp": "^0.16.0"
+    "hyperapp": "^0.17.1"
   }
 }
