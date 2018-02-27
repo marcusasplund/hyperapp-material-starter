@@ -30,9 +30,9 @@
     "@taskr/watch": "^1.1.0",
     "autoprefixer": "^7.1.4",
     "browser-sync": "^2.18.13",
-    "rollup": "^0.55.0",
-    "rollup-plugin-buble": "^0.18.0",
-    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup": "^0.56.3",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^2.0.0",
     "serve": "^6.0.6",
@@ -41,16 +41,16 @@
     "workbox-build": "^2.1.2"
   },
   "dependencies": {
-    "@material/button": "^0.28.0",
-    "@material/card": "^0.28.0",
-    "@material/dialog": "^0.28.0",
-    "@material/drawer": "^0.28.0",
-    "@material/layout-grid": "^0.28.0",
-    "@material/list": "^0.28.0",
-    "@material/ripple": "^0.28.0",
-    "@material/toolbar": "^0.28.0",
-    "@material/typography": "^0.3.0",
-    "axios": "^0.17.1",
-    "hyperapp": "^0.16.0"
+    "@material/button": "^0.31.0",
+    "@material/card": "^0.31.0",
+    "@material/dialog": "^0.31.0",
+    "@material/drawer": "^0.31.0",
+    "@material/layout-grid": "^0.31.0",
+    "@material/list": "^0.31.0",
+    "@material/ripple": "^0.31.0",
+    "@material/toolbar": "^0.31.0",
+    "@material/typography": "^0.28.0",
+    "axios": "^0.18.0",
+    "hyperapp": "^1.1.2"
   }
 }
