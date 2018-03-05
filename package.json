@@ -48,7 +48,7 @@
     "@material/layout-grid": "^0.24.0",
     "@material/list": "^0.31.0",
     "@material/ripple": "^0.31.0",
-    "@material/toolbar": "^0.30.0",
+    "@material/toolbar": "^0.32.0",
     "@material/typography": "^0.28.0",
     "axios": "^0.18.0",
     "hyperapp": "^1.1.2"
