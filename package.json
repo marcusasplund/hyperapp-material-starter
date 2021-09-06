@@ -50,7 +50,7 @@
     "@material/ripple": "^0.31.0",
     "@material/toolbar": "^0.30.0",
     "@material/typography": "^0.28.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.3",
     "hyperapp": "^1.1.2"
   }
 }
